@@ -864,7 +864,7 @@ public class EditarAtaWindow extends EditarWindow {
                 			if(anexo.getIdAnexo() > 0){
 	                			AnexoBO bo = new AnexoBO();
 	                			
-								bo.excluir(anexo);
+								bo.excluir(anexo.getIdAnexo()); /* Utiliza o método da classe AnexoBO "excluir(int id)" ao invéz do método "excluir(Anexo)", tornando o ultimo inutilizável, podendo ser removido da classe. referencia: https://refactoring.guru/replace-parameter-with-explicit-methods*/
                 			}
                         	
                         	ata.getAnexos().remove(index);

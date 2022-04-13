@@ -60,9 +60,7 @@ public class AnexoBO {
 		}
 	}
 	
-	public void excluir(Anexo anexo) throws Exception{
-		this.excluir(anexo.getIdAnexo());
-	}
+/* Foi deletado o método excluir(Anexo anexo), pois o mesmo foi substituído pelo método abaixo, no qual se recebe o ID do Anexo ao invés do objeto. (ver classe EditarAtaWindow)  referencia: https://refactoring.guru/replace-parameter-with-explicit-methods*/
 	
 	public void excluir(int id) throws Exception{
 		try{
